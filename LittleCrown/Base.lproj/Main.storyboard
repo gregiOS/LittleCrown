@@ -44,6 +44,9 @@
                                         <integer key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="doLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AMJ-vv-g3b"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Etb-pt-Jw1">
                                 <rect key="frame" x="20" y="531" width="335" height="37"/>
@@ -65,19 +68,35 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="VhQ-h4-F3i" id="Zg2-G4-9ny"/>
+                        <outlet property="passwordTextField" destination="oAV-Na-3wb" id="ewe-0B-BOT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
         </scene>
-        <!--View Controller-->
+        <!--Welcome View Controller-->
         <scene sceneID="6Qx-F7-kfu">
             <objects>
-                <viewController id="5bt-58-sae" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WelcomeViewController" id="5bt-58-sae" customClass="WelcomeViewController" customModule="LittleCrown" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="r7l-Re-DwE">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zw0-T3-x3a">
+                                <rect key="frame" x="152" y="323" width="71" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="zw0-T3-x3a" firstAttribute="centerX" secondItem="r7l-Re-DwE" secondAttribute="centerX" id="4bT-SC-3xo"/>
+                            <constraint firstItem="zw0-T3-x3a" firstAttribute="centerY" secondItem="r7l-Re-DwE" secondAttribute="centerY" id="NDR-qb-1iI"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="YUr-ic-AGe"/>
                     </view>
                 </viewController>
